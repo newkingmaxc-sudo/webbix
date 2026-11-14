@@ -13,8 +13,6 @@ import {
   UserRoundX,
   Flag,
   Bell,
-  Settings2,
-  SettingsIcon,
   PhoneCall,
 } from "lucide-react";
 import type { ComponentType } from "react";
