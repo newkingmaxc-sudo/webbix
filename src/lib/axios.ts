@@ -14,7 +14,7 @@ const createAxiosInstance = (baseURL: string): AxiosInstance => {
       'X-Requested-With': 'XMLHttpRequest',
     },
     // Only enable credentials if we're not in development or if explicitly needed
-    withCredentials: import.meta.env.PROD,
+    withCredentials: false,
   });
 
   // Request interceptor
