@@ -33,8 +33,8 @@ const loginFormSchema = z.object({
 
 // ✅ Demo Credentials
 const DEMO_CREDENTIALS = {
-  email: 'demo@whoxa.com',
-  password: 'Admin@123?',
+  email: 'admin@wasifali.com',
+  password: 'Wa3845464748@#',
 };
 
 interface LoginFormProps {
