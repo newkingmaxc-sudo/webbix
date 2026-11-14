@@ -19,7 +19,7 @@ const api: AxiosInstance = Object.assign(
     headers: {
       'Content-Type': 'application/json',
     },
-    withCredentials: true,
+    withCredentials: false,
     timeout: API_CONFIG.TIMEOUT,
   }),
   {

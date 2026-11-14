@@ -1,8 +1,18 @@
+// Ensure base URL always points to /api
+const getApiBaseUrl = (): string => {
+  let url = (import.meta.env.VITE_API_URL as string) || "https://specifications-board-shape-strange.trycloudflare.com/api";
+  url = url.trim().replace(/\/+$/, "");
+  if (!url.endsWith("/api")) {
+    url = `${url}/api`;
+  }
+  return url;
+};
+
 // API configuration constants
 export const API_CONFIG = {
   // Base URL for all API requests - uses Vite environment variables
   // In development, use the full URL; in production, use relative URLs
-  BASE_URL: import.meta.env["VITE_API_URL"],
+  BASE_URL: getApiBaseUrl(),
 
   // API version
   VERSION: "v1",
