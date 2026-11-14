@@ -46,9 +46,7 @@ if (!root) {
 
 // Render the app
 root.render(
-  // <StrictMode>
-  <BrowserRouter >
-  // <BrowserRouter basename="/admin">
+  <BrowserRouter>
     <ToastProvider>
       <ErrorBoundary
         fallback={ErrorFallback}
@@ -68,8 +66,5 @@ root.render(
         </QueryClientProvider>
       </ErrorBoundary>
     </ToastProvider>
-
   </BrowserRouter>
-
-  // </StrictMode>
 );
